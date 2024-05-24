@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Our CSS File -->
+    <link rel="stylesheet" href="./portfolio.css" />
+
+    <!-- Google Font 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Personal Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class=" navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <a class=" navbar-brand poetsen-one-regular " href="#">
+          My Portfolio
+        </a>
+
+        <!-- Button for mobile users -->
+        <button
+        class=" navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" collapse navbar-collapse " id="navbarNav"  >
+          <ul class=" navbar-nav ms-auto" >
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5 mt-5">
+      <div class="container">
+
+        <!-- 
+          
+          a bootstrap row is 12 
+        
+        -->
+        <div class="row">
+          <div class="col-md-6">
+              <h1 class=" mb-4 poetsen-one-regular">About</h1>
+              <p class="lead noto-sans-one">Hello I am Emmanuel, I am a passionate web Developer, Hello I am Emmanuel, I am a passionate web Developer</p>
+          </div>
+          <div class="col-md-6">
+              <img src="./images/pic4.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-info">
+      <div class="container">
+        <h1 class="text-center mb-4 poetsen-one-regular">Portfolio</h1>
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="./images/web1.png" alt="web1" />
+              <div class="card-body">
+                <h4 class="card-title poetsen-one-regular">Mark Air - Nike Shoes</h4>
+                <p class="card-text noto-sans-one">An e-commerce website for nike</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="./images/web2.png" alt="web1" />
+              <div class="card-body">
+                <h4 class="card-title poetsen-one-regular">Looking for Elegant</h4>
+                <p class="card-text noto-sans-one">An e-commerce website for nike</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Product 3 -->
+<div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="./images/web4.png" alt="web1" />
+              <div class="card-body">
+                <h4 class="card-title poetsen-one-regular">Smart Bouquet</h4>
+                <p class="card-text noto-sans-one">An e-commerce website for nike</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark py-5">
+        <div class="container">
+          <h1 class="text-center mb-4 poetsen-one-regular text-white">Contact Me</h1>
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <form>
+                <!-- Full Name -->
+                <div class="mb-3">
+                  <label class="text-white form-label ">Full Name</label>
+                  <input type="text" class="form-control" id="name" required placeholder="Pls enter your full name here" />
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <label class="text-white form-label ">Your Email</label>
+                  <input type="email" class="form-control" id="emmail" required placeholder="e.g example@gmail.com" />
+                </div>
+
+                <!-- Feedback or comment -->
+                <div class="mb-3">
+                  <label class="text-white form-label ">Pls leave a message</label>
+                  <textarea class=" form-control " id="message" row="8" required>
+
+                  </textarea>
+                </div>
+
+                <button type="submit" class="btn btn-info w-100">Send message</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
+
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> -->
